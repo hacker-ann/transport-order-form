@@ -22,6 +22,9 @@
 
 <body>
 
+<div class="container-fluid p-3 my-3 bg-info text-info text-center">
+<h2>Welcome to Transport order form page!</h2>
+</div>
 	<div>
 		
 		<div id="loginbox" style="margin-top: 50px;"

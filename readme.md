@@ -1,6 +1,6 @@
 # Transport order form
 ***
-This is a web application using Spring Security and Bootstrap.
+This is a web application using Spring Security and Bootstrap. It has been built using Maven.
 
 ## Table of Contents
 * [General Info](#general-information)
@@ -8,11 +8,10 @@ This is a web application using Spring Security and Bootstrap.
 * [Technologies Used](#technologies-used)
 * [Setup](#setup)
 * [Project Status](#project-status)
-* [Room for Improvement](#room-for-improvement)
 
 
 ## General Information 
-
+The project was created to enable creating transport orders outside ERP software. It has been inspired by current work environment.
 
 ## Features 
 This project includes:
@@ -22,57 +21,47 @@ This project includes:
 
 ![login page](./img/login.png)
 
-![form page](./img/form.png)
+|  form            |  form |
+|---------------------|----------------------|
+|![form page1](./img/form1.png) |![form page2](./img/form2.png)|
+
+Transport order confirmation
 
 ![transport order](./img/order.png)
 
 ## Technologies Used
 - Java - version 15.0.1.0
-- Spring - version 5.1.9.Release
-- Maven
+- Spring - version 5.0.2. Release
+- Spring Security - version 5.0.0. Release
+- Hibernate-validator - version 6.1.6.Final
 - Bootstrap 3
-- Javax.servlet - version 1.2.1
+- JSP
+- Javax.servlet - version 3.1.0
+- Maven
 - Tomcat - version 9.0
 
 ## Setup
 
 ###### 1. Clone this reposidory to your desktop
 
-###### 2. Install and Configure Database
-[Install MySQL database](https://dev.mysql.com/doc/refman/5.7/en/installing.html)
+###### 2. Import project into Eclipse (recommended)
 
-###### 3. Start Database Service
-Create database
+To use Maven in the Eclipse environment at all, you must first download the appropriate plug-in. It is called [m2e](https://www.eclipse.org/m2e/) and is also available through the [Eclipse Marketplace](https://marketplace.eclipse.org/content/maven-integration-eclipse-luna-and-newer).
 
-```
-CREATE DATABASE  IF NOT EXISTS `hb_routes_tracker`;
-USE `hb_routes_tracker`;
+In Eclipse, go to the File menu and choose:
+     `File -> Import... -> Existing Maven Projects into Workspace`
+     `Select the directory containing this file.`
+     `Click Finish.`
 
-DROP TABLE IF EXISTS `routes`;
+All the dependencies you will be able to build from the pom.xml in this directory.
 
-CREATE TABLE `routes` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `route_name` varchar(100) DEFAULT NULL,
-  `grade` varchar(10) DEFAULT NULL,
-  `country` varchar(45) DEFAULT NULL,
-  `climbing_area` varchar(100) DEFAULT NULL,
-  `crag_or_sector` varchar(100) DEFAULT NULL,
-  `style` varchar(5) DEFAULT NULL,
-  `date_of_ascent` date DEFAULT NULL,
-  `note` text DEFAULT NULL,
+If you need more information please take a look at this [quick tutorial](https://maven.apache.org/guides/getting-started/maven-in-five-minutes.html).
+     
 
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_ci;
-```
-
-###### 4. Install and Configure Web Server
+###### 3. Install and Configure Web Server
 [Setup and Install Apache Tomcat Server in Eclipse Development Environment](https://crunchify.com/step-by-step-guide-to-setup-and-install-apache-tomcat-server-in-eclipse-development-environment-ide/)
 
 ## Project Status
-Project is in progress.
+Project is complete.
 
-## Room for Improvement
-To do:
-- presenting the climbing activity in the form of charts
-- expansion of the database with accounts for multiple users
 

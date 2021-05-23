@@ -19,15 +19,17 @@ This project includes:
 - Form page
 - Displaying data retrieved from the form as a transport order
 
-![login page](./img/login.png)
+|  Login page            |
+|---------------------|
+|![login page](./img/login.png)|
 
-|  form            |  form |
+|  Form            |  Form |
 |---------------------|----------------------|
 |![form page1](./img/form1.png) |![form page2](./img/form2.png)|
 
-Transport order confirmation
-
-![transport order](./img/order.png)
+|Transport order confirmation            |
+|---------------------|
+|![transport order](./img/order.png)|
 
 ## Technologies Used
 - Java - version 15.0.1.0

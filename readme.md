@@ -51,10 +51,11 @@ This project includes:
 To use Maven in the Eclipse environment at all, you must first download the appropriate plug-in. It is called [m2e](https://www.eclipse.org/m2e/) and is also available through the [Eclipse Marketplace](https://marketplace.eclipse.org/content/maven-integration-eclipse-luna-and-newer).
 
 In Eclipse, go to the File menu and choose:
-     `File -> Import... -> Existing Maven Projects into Workspace`
-     `Select the directory containing this file.`
-     `Click Finish.`
-
+```
+1. File -> Import... -> Existing Maven Projects into Workspace
+2. Select the directory containing this file.
+3. Click Finish.
+```
 All the dependencies you will be able to build from the pom.xml in this directory.
 
 If you need more information please take a look at this [quick tutorial](https://maven.apache.org/guides/getting-started/maven-in-five-minutes.html).

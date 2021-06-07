@@ -21,8 +21,29 @@
 </head>
 
 <body>
+<!-- Logout button -->	
+<div class="container-fluid bg-info ">
+
+<form:form action="${pageContext.request.contextPath}/logout" 
+			   method="POST">
+ <div style="margin-top: 10px" class="form-group row">
+    <div class="col-sm-1 col-sm-offset-11 controls">
+							
+							
+						<button type="submit" class="btn btn-danger">Logout</button>
+		</div>					
+		</div>				
+
+	</form:form>
+	</div>
+
+
+
+
 <div class="container-fluid p-3 my-3 bg-info text-info text-center">
+
 <h1>Transport Order Form</h1>
+
 </div>
 <div class="container-fluid p-3 my-3">
 <div class="row">

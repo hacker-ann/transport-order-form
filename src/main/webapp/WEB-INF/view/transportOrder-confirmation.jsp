@@ -1,4 +1,5 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 
 <!DOCTYPE html>
 
@@ -22,6 +23,21 @@
 </head>
 
 <body>
+<!-- Logout button -->	
+<div class="container-fluid ">
+
+<form:form action="${pageContext.request.contextPath}/logout" 
+			   method="POST">
+ <div style="margin-top: 10px" class="form-group row">
+    <div class="col-sm-1 col-sm-offset-11 controls">
+							
+							
+						<button type="submit" class="btn btn-danger">Logout</button>
+		</div>					
+		</div>				
+
+	</form:form>
+	</div>
 	<div class="container-fluid p-3 my-3">
 		<div class="row">
 			<div class="col-sm-6">
